@@ -1,3 +1,3 @@
-# StackTinDEV
-App TinDEV
+# Start JavaScript-Exercicios
+RcoketSeat
 
