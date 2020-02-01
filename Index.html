@@ -16,7 +16,20 @@
 
     <script>
 
-        // var inputElement = document.querySelector('input[name=nome]');
+        // var inputElement = document.getElementsByTagName('input')[0];
+
+        var linkElement = document.createElement('a');
+
+        linkElement.setAttribute('href', 'http://google.com')
+
+        var  textElement = document.createTextNode('Acessar o site');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+        
+         var inputElement = document.querySelector('input[name=nome]');
+        //  containerElement.removeChild(inputElement);
         // var btnElement = document.querySelector('button.botao');
 
         // btnElement.onclick = function () {
@@ -26,7 +39,7 @@
         //     alert(text)
         // }
 
-
+        // console.log(inputElement);
 
     </script>
 

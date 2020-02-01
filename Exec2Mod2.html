@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Curso Javacript Exec1 Mod2</title>
+</head>
+
+<body>
+
+
+    <button id="botao"> Quadrado </button>
+
+    <div id="box"></div>
+
+    <script>
+        var botaoElement = document.getElementById('botao');
+        var boxElement = document.getElementById('box');
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        var newColor = getRandomColor(); // #E943F0
+
+        botaoElement.onclick = function () {
+
+            var boxs = document.createElement('div');
+
+            boxs.style.width = 100;
+            boxs.style.height = 100;
+            boxs.style.backgroundColor = '#f00';
+
+            boxs.onmouseover  = function () {
+                boxs.style.backgroundColor = getRandomColor();
+            }
+
+            boxElement.appendChild(boxs);
+        };
+
+
+
+    </script>
+
+
+</body>
+
+</html>
